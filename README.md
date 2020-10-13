@@ -206,11 +206,11 @@ summary(model1)$call; summary(model1)$coef
 ```
 
 ```r
-deviance(modl1)
+deviance(model1)
 ```
 
 ```
-## [1] 169.2859
+## [1] 147.4944
 ```
 interpret some variable when holding the other variables as constants:
 
@@ -375,7 +375,7 @@ plot(model1,which = 3)
 
 <img src="miles_per_gallon_files/figure-html/fig8-1.png" style="display: block; margin: auto;" />
 
-variance is constant around the line,Homoscedasticity is violated.
+variance is constant around the line,Homoscedasticity is holding.
 
 
 ```r
@@ -389,7 +389,7 @@ bptest(model1)
 ## data:  model1
 ## BP = 18.294, df = 16, p-value = 0.307
 ```
-the p-value is less then .05 so the assumption of homoskedasticity is violated as we expected.
+the p-value is less then .05 so the assumption of homoskedasticity is holding as we expected.
 
 The cook's distance and residuals vs leverage to spot the outliers but the model assumptions are violated so the outliers analysis dose not matter as the model is poorly fit.
 
